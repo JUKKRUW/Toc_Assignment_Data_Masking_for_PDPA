@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="th" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDPA Shield</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Design system: docs/DESIGN.md. tokens.css is shared; each page owns its own stylesheet. -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tokens.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">   <!-- M09 -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/mask.css') }}">   <!-- M09 -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/rules.css') }}">  <!-- M10 -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tests.css') }}">  <!-- M10 -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dfa.css') }}">    <!-- M10 -->
+</head>
+<body>
+<div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<div class="app">
+  <!-- ============ Sidebar (M09) ============ -->
+  <aside class="side glass">
+    <div class="brand"><!-- TODO(M09): logo mark + "PDPA Shield" + subtitle (i18n: brand.sub) --></div>
+    <nav class="nav" id="nav">
+      <button class="active" data-tab="mask"  data-i18n="nav.mask"></button>
+      <button data-tab="rules" data-i18n="nav.rules"></button>
+      <button data-tab="tests" data-i18n="nav.tests"></button>
+      <button data-tab="dfa"   data-i18n="nav.dfa"></button>
+    </nav>
+    <div class="side-foot"><!-- TODO(M09): secure status pill, TH/EN segmented control, theme toggle --></div>
+  </aside>
+
+  <main id="main">
+    <!-- ============ 01 Mask Logs (M09) — see docs/TEAM.md#m09 ============ -->
+    <section class="tab active" id="tab-mask">
+      <!-- TODO(M09): page head, source-log textarea (auto-height), rule toggles,
+           A · scan summary (stats + risk ring), B · before/after panes with redaction animation -->
+    </section>
+
+    <!-- ============ 02 Regex Rules (M10) ============ -->
+    <section class="tab" id="tab-rules">
+      <!-- TODO(M10): A · syntax colour legend, B · one glass card per rule from GET /api/rules -->
+    </section>
+
+    <!-- ============ 03 Test Suite (M10) ============ -->
+    <section class="tab" id="tab-tests">
+      <!-- TODO(M10): A · pass summary + progress bar, B · try-it textarea, C · results table from GET /api/tests -->
+    </section>
+
+    <!-- ============ 04 Automaton (M10) ============ -->
+    <section class="tab" id="tab-dfa">
+      <!-- TODO(M10): machine selector, input + tape, SVG DFA (3 branches), details cards -->
+    </section>
+  </main>
+</div>
+
+<script type="module" src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
