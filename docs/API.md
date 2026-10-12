@@ -18,10 +18,19 @@ Response
   ],
   "masked": "user=s*******d@company.com",
   "stats": {"counts": {"card": 0, "email": 1, "phone": 0, "dob": 0, "address": 0},
-            "total": 1, "risk": 2, "level": "ต่ำ", "level_code": "low"}
+            "total": 1, "risk": 2, "level": "ต่ำ", "level_code": "low"},
+  "issues": []
 }
 ```
 `info` is an i18n key (`"luhn_ok"`, `"luhn_fail"`) or `null`.
+
+`issues` lists values that look like personal data but are malformed, so they were **not** masked
+(see `engine/validate.py`). Example for `card = 1234-ฟ123-2345-1536`:
+```json
+{"rule": "card", "start": 7, "end": 26, "text": "1234-ฟ123-2345-1536", "line": 1,
+ "reason_th": "มีอักขระที่ไม่ใช่ตัวเลข: ฟ; มีตัวเลข 15 หลัก ต้องมี 16 หลัก",
+ "reason_en": "contains non-digit characters: ฟ; has 15 digits, needs 16"}
+```
 
 ## `POST /api/upload`
 
