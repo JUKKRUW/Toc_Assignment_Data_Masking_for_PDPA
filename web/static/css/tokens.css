@@ -1,0 +1,36 @@
+/* Design tokens — shared contract for M09 and M10. Change only via PR reviewed by both.
+   Theme: Liquid Glass (Apple-like) · security blue / green / white. See docs/DESIGN.md */
+:root{
+  --bg:#eef3fa;
+  --blob-1:#4f9bff; --blob-2:#34d399; --blob-3:#a5c8ff;
+  --glass:rgba(255,255,255,.58); --glass-strong:rgba(255,255,255,.8); --glass-sub:rgba(255,255,255,.42);
+  --stroke:rgba(255,255,255,.75); --stroke-2:rgba(15,40,80,.08); --hi:rgba(255,255,255,.95);
+  --ink:#0b1b33; --ink-2:#2c3e5a; --muted:#61708a; --faint:#8a97ad;
+  --blue:#0a6cff; --blue-2:#3d8bff; --green:#12b76a; --green-2:#34d399;
+  --warn:#f59e0b; --bad:#ef4444;
+  --c-card:#ef4444; --c-email:#0a6cff; --c-phone:#f59e0b; --c-dob:#8b5cf6; --c-address:#12b76a;
+  --code-bg:rgba(240,245,252,.72);
+  --shadow:0 1px 1px rgba(10,30,60,.04),0 10px 30px -12px rgba(10,40,90,.18);
+  --shadow-lg:0 30px 60px -30px rgba(10,40,90,.35);
+  --blur:saturate(180%) blur(22px);
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"SF Pro Text","Noto Sans Thai","Segoe UI",sans-serif;
+  --mono:"JetBrains Mono","SF Mono",ui-monospace,Menlo,Consolas,monospace;
+  --spring:cubic-bezier(.32,.72,0,1);
+  --r-lg:22px;
+  /* spacing system: exactly two gaps */
+  --gap-section:40px;   /* between major blocks (A, B, C) */
+  --gap-card:20px;      /* between cards inside a block */
+}
+:root[data-theme="dark"]{
+  --bg:#070d1a;
+  --blob-1:#1753c9; --blob-2:#0e8f62; --blob-3:#23407a;
+  --glass:rgba(22,32,52,.55); --glass-strong:rgba(34,48,76,.82); --glass-sub:rgba(30,44,70,.4);
+  --stroke:rgba(255,255,255,.12); --stroke-2:rgba(255,255,255,.07); --hi:rgba(255,255,255,.14);
+  --ink:#eaf1ff; --ink-2:#c3d0e6; --muted:#90a0bb; --faint:#6c7c98;
+  --blue:#4c95ff; --blue-2:#6aa8ff; --green:#2fc98a; --green-2:#6ee7b7;
+  --c-email:#4c95ff; --c-dob:#a78bfa; --c-address:#34d399;
+  --code-bg:rgba(8,14,28,.5);
+  --shadow:0 1px 1px rgba(0,0,0,.2),0 14px 40px -16px rgba(0,0,0,.7);
+  --shadow-lg:0 30px 60px -30px rgba(0,0,0,.8);
+}
+@media (max-width:900px){ :root{ --gap-section:30px; --gap-card:14px; } }

@@ -1,0 +1,11 @@
+/* Owner: M09 — shell, glass material, primitives shared by every page.
+   TODO(M09):
+   [ ] body, ambient background blobs (slow float animation)
+   [ ] .glass material: background var(--glass), backdrop-filter var(--blur), 1px var(--stroke), inset highlight
+   [ ] .app grid (sidebar 260px + main), sticky sidebar, mobile top bar under 900px
+   [ ] nav with sliding indicator, .seg segmented control with sliding thumb
+   [ ] .btn / .btn.primary / .btn.sm / .tag / .panel-h / .panel-b
+   [ ] .page-head, h1, .lede, .eyebrow, .sec-title (A / B / C section labels)
+   [ ] tab enter animation, language-switch blur fade
+   [ ] @media (prefers-reduced-motion: reduce) disables all motion
+*/
