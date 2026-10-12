@@ -3,7 +3,7 @@ import pytest
 
 from pdpa_shield.cases import cases_for
 from pdpa_shield.engine.types import apply_single
-from pdpa_shield.rules import dob
+from pdpa_shield.rules import date as dob  # our file is rules/date.py
 
 CASES = cases_for("dob")
 

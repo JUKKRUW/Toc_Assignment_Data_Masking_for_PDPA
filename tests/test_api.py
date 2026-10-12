@@ -19,9 +19,17 @@ def test_health(client):
 
 def test_mask_shape(client):
     data = client.post("/api/mask", json={"text": "hello"}).get_json()
-    assert set(data) == {"parts", "masked", "stats"}
+    assert set(data) == {"parts", "masked", "stats", "issues"}
     assert data["masked"] == "hello"
     assert set(data["stats"]) == {"counts", "total", "risk", "level", "level_code"}
+    assert data["issues"] == []
+
+
+def test_mask_reports_malformed_input(client):
+    data = client.post("/api/mask", json={"text": "card = 1234-ฟ123-2345-1536"}).get_json()
+    assert data["masked"] == "card = 1234-ฟ123-2345-1536"
+    issue = data["issues"][0]
+    assert issue["rule"] == "card" and issue["line"] == 1 and "ฟ" in issue["reason_th"]
 
 
 def test_upload_thai_encodings(client):
