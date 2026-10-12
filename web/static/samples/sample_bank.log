@@ -1,0 +1,30 @@
+2026-09-24 08:02:44 [INFO ] LOGIN         session=433218 | Address: 433 ซอยงามวงศ์วาน 42 ถนนงามวงศ์วาน แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพฯ
+2026-09-24 08:03:41 [WARN ] CARD_ACTIVATE session=402654 | card=1161-5594-0781-6184
+2026-09-24 08:06:20 [INFO ] CARD_ACTIVATE session=310341 | email=nok_t@mail.go.th
+2026-09-24 08:07:02 [INFO ] PAYMENT       session=341928 | card=4835 0305 6413 9537 | Address: 406 ถนนรัชดาภิเษก แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ | customer DOB:09/12/2547
+2026-09-24 08:09:32 [WARN ] PAYMENT       session=328710 | card=6916-6978-4801-8451 | ip=10.232.1.134
+2026-09-24 08:11:41 [INFO ] CARD_ACTIVATE session=148932 | card=5701543039117182 | email=maleet@ku.ac.th | Address: ไม่ระบุ
+2026-09-24 08:15:25 [DEBUG] KYC_UPDATE    session=383465 | Address: 124 ซอยลาดกระบัง 5 ถนนงามวงศ์วาน แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ | customer DOB:21/01/2524 | txn_id=51834738299737631165
+2026-09-24 08:17:14 [WARN ] KYC_UPDATE    session=010651 | card=8726-2473-1781-0801
+2026-09-24 08:20:52 [INFO ] TRANSFER      session=677360 | customer DOB:01/07/2526
+2026-09-24 08:24:13 [WARN ] PAYMENT       session=687234 | email=arthitd@mail.go.th | txn_id=97882081219136193990
+2026-09-24 08:26:52 [INFO ] KYC_UPDATE    session=998543 | tel=082 751 0799 | card=1838-4251-3542-7849 | customer DOB:26/11/2543 | Address: ไม่ระบุ
+2026-09-24 08:28:09 [ERROR] LOGIN         session=241182 | tel=095-487-4016 | card=0052-4278-6801-1280
+2026-09-24 08:30:39 [DEBUG] TRANSFER      session=620450 | card=5869-2322-6025-6342 | Address: 180/14 หมู่ 4 ถนนพหลโยธิน ตำบลสุเทพ อำเภอเมืองเชียงใหม่ จังหวัดเชียงใหม่
+2026-09-24 08:32:37 [INFO ] PAYMENT       session=330365 | email=kittipongr@mail.go.th | tel=095-142-9401
+2026-09-24 08:34:06 [ERROR] PAYMENT       session=698169 | tel=066-883-5615
+2026-09-24 08:36:56 [INFO ] OTP_SENT      session=484656 | tel=086-994-6804 | card=3699-5777-3872-1489 | email=kittipong.wong@mail.go.th | ip=10.75.12.23
+2026-09-24 08:37:59 [WARN ] CARD_ACTIVATE session=176936 | customer DOB:05/11/2554 | card=1632-8708-3172-7889 | ref=727-868-7277
+2026-09-24 08:39:06 [INFO ] OTP_SENT      session=487347 | tel=064 581 2236
+2026-09-24 08:42:07 [INFO ] LOGIN         session=665876 | card=6909 6705 4668 8937 | ref=597-065-6272
+2026-09-24 08:44:47 [DEBUG] LOGIN         session=699016 | customer DOB:06/01/2526
+2026-09-24 08:45:42 [WARN ] PAYMENT       session=564641 | email=kittipong.k@mail.go.th | Address: 42 ถนนพหลโยธิน แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพฯ | txn_id=93745299124190496631
+2026-09-24 08:48:14 [ERROR] OTP_SENT      session=314919 | tel=096 185 0671
+2026-09-24 08:49:47 [ERROR] KYC_UPDATE    session=262849 | customer DOB:27/12/2547 | Address: 275 ซอยพระราม 37 ถนนรัชดาภิเษก แขวงบางรัก เขตสีลม กรุงเทพฯ | card=5075 2735 4549 4808
+2026-09-24 08:50:09 [INFO ] OTP_SENT      session=678377 | email=pim.r@mail.go.th | Address: 79/85 ซอยงามวงศ์วาน 36 ถนนสุขุมวิท แขวงจตุจักร เขตจตุจักร กรุงเทพฯ
+2026-09-24 08:52:06 [INFO ] PAYMENT       session=431351 | Address: 190/62 หมู่ 10 ถนนสุขุมวิท ตำบลในเมือง อำเภอเมืองขอนแก่น จังหวัดขอนแก่น | card=3435-2408-2400-8427 | email=somsri.p@hotmail.com
+2026-09-24 08:53:34 [INFO ] LOGIN         session=471167 | Address: 645 ซอยพหลโยธิน 8 ถนนรัชดาภิเษก แขวงจตุจักร เขตจตุจักร กรุงเทพฯ
+2026-09-24 08:56:10 [DEBUG] CARD_ACTIVATE session=386774 | customer DOB:20/01/2549 | tel=091-341-2328 | Address: 41/1 ซอยพหลโยธิน 19 ถนนงามวงศ์วาน แขวงบางรัก เขตสีลม กรุงเทพฯ | ref=172-349-3618
+2026-09-24 08:57:08 [ERROR] TRANSFER      session=421024 | Address: 120/89 หมู่ 9 ถนนรัชดาภิเษก ตำบลสุเทพ อำเภอเมืองเชียงใหม่ จังหวัดเชียงใหม่ | tel=087-906-5940 | card=3990-4902-7874-2967
+2026-09-24 08:59:09 [INFO ] KYC_UPDATE    session=551256 | customer DOB:13/09/2512 | tel=081 451 6808 | Address: 474 ถนนลาดกระบัง แขวงบางรัก เขตสีลม กรุงเทพฯ | Address: ไม่ระบุ
+2026-09-24 08:59:43 [INFO ] KYC_UPDATE    session=710932 | Address: 566 หมู่ 8 ถนนลาดกระบัง ตำบลคลองหนึ่ง อำเภอคลองหลวง จังหวัดปทุมธานี | email=malee_p@ku.ac.th
