@@ -62,4 +62,4 @@ RULE = Rule(
         "(?P=sep) — the separator must be consistent ('-', ' ' or none)",
         "re.sub(r'\\d', 'X', …) — replaces every digit except the last 4",
     ],
-)0
+)

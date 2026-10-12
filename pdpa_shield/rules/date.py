@@ -27,30 +27,6 @@ PATTERN: re.Pattern | None = re.compile(
 )
 
 
-def _mask_dob(m: re.Match) -> str:
-    s = m["sep"]
-    return f"{m['prefix']}XX{s}XX{s}{m['century']}XX"
-
-#เผื่อเรียกซ้ำ
-ADDRESS_RE = re.compile(
-    r"""
-    (?P<prefix>(?<![A-Za-z])Address[\t\x20]*:[\t\x20]*)
-    (?P<house>\d{1,5}(?:/\d{1,5})?)                                   # 689 หรือ 99/12
-    [\t\x20]+
-    (?:(?P<moo>(?:หมู่(?:ที่)?|ม\.)[\t\x20]*\d{1,3})[\t\x20]+)?         # หมู่ (optional)
-    (?:(?P<soi>(?:ซอย|ซ\.)[\t\x20]*\S+(?:[\t\x20]+\d+(?:/\d+)?)?)[\t\x20]+)?  # ซอย (optional)
-    (?P<road>(?:ถนน|ถ\.)[\t\x20]*\S+(?:[\t\x20]+\d+)?)                 # ถนน
-    [\t\x20]+
-    (?P<subdistrict>(?:แขวง|ตำบล|ต\.)[\t\x20]*\S+)                     # แขวง / ตำบล
-    [\t\x20]+
-    (?P<district>(?:เขต|อำเภอ|อ\.)[\t\x20]*\S+)                        # เขต / อำเภอ
-    [\t\x20]+
-    (?P<province>(?:จังหวัด|จ\.)?[\t\x20]*[^\s,;|]+)                   # จังหวัด
-    """,
-    re.VERBOSE,
-)
-
-
 def mask(m: re.Match) -> str:
     """Return e.g. 'DOB:XX/XX/25XX'."""
     s = m["sep"]
